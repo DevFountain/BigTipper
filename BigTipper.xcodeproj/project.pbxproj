@@ -16,7 +16,7 @@
 		E98A67DE1E6A177A00C584D2 /* BigTipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67DD1E6A177A00C584D2 /* BigTipperUITests.swift */; };
 		E98A67F01E6A332400C584D2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67EF1E6A332400C584D2 /* SettingsViewController.swift */; };
 		E98A67F21E6A358D00C584D2 /* TipPercent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67F11E6A358D00C584D2 /* TipPercent.swift */; };
-		E98A67F61E6A39D600C584D2 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67F51E6A39D600C584D2 /* UserDefaults.swift */; };
+		E98A67F61E6A39D600C584D2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67F51E6A39D600C584D2 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		E98A67DF1E6A177A00C584D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E98A67EF1E6A332400C584D2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E98A67F11E6A358D00C584D2 /* TipPercent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipPercent.swift; sourceTree = "<group>"; };
-		E98A67F51E6A39D600C584D2 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		E98A67F51E6A39D600C584D2 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 				E98A67BF1E6A177A00C584D2 /* TipViewController.swift */,
 				E98A67EF1E6A332400C584D2 /* SettingsViewController.swift */,
 				E98A67F11E6A358D00C584D2 /* TipPercent.swift */,
-				E98A67F51E6A39D600C584D2 /* UserDefaults.swift */,
+				E98A67F51E6A39D600C584D2 /* Settings.swift */,
 				E98A67C11E6A177A00C584D2 /* Main.storyboard */,
 				E98A67C41E6A177A00C584D2 /* Assets.xcassets */,
 				E98A67C61E6A177A00C584D2 /* LaunchScreen.storyboard */,
@@ -276,7 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98A67C01E6A177A00C584D2 /* TipViewController.swift in Sources */,
-				E98A67F61E6A39D600C584D2 /* UserDefaults.swift in Sources */,
+				E98A67F61E6A39D600C584D2 /* Settings.swift in Sources */,
 				E98A67F21E6A358D00C584D2 /* TipPercent.swift in Sources */,
 				E98A67BE1E6A177A00C584D2 /* AppDelegate.swift in Sources */,
 				E98A67F01E6A332400C584D2 /* SettingsViewController.swift in Sources */,

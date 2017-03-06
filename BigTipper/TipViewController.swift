@@ -28,11 +28,25 @@ class TipViewController: UIViewController {
 
         let twentyFive = TipPercent(title: "25%", value: 0.25)
         TipViewController.tipPercentPickerData.append(twentyFive)
+
+        if Settings.billAmount != "" {
+            billTextField.text = Settings.billAmount
+            calculateTip(self)
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tipSegmentedControl.selectedSegmentIndex = Settings.defaultTipPercent
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        billTextField.becomeFirstResponder()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        billTextField.resignFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +55,7 @@ class TipViewController: UIViewController {
     }
 
     @IBAction func onTap(_ sender: Any) {
-        view.endEditing(true)
+        billTextField.resignFirstResponder()
     }
 
     @IBAction func calculateTip(_ sender: AnyObject) {
@@ -49,8 +63,17 @@ class TipViewController: UIViewController {
         let tip = bill * TipViewController.tipPercentPickerData[tipSegmentedControl.selectedSegmentIndex].value
         let total = bill + tip
 
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.locale = Locale.current
+        currencyFormatter.maximumFractionDigits = 2
+        currencyFormatter.minimumFractionDigits = 2
+        currencyFormatter.numberStyle = NumberFormatter.Style.currency
+        currencyFormatter.usesGroupingSeparator = true
+
+        tipLabel.text = currencyFormatter.string(from: NSNumber(value: tip))
+        totalLabel.text = currencyFormatter.string(from: NSNumber(value: total))
+
+        Settings.billAmount = billTextField.text!
     }
 
 }
