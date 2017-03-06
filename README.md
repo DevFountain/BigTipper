@@ -4,7 +4,7 @@
 
 Submitted by: **Curtis Wilcox**
 
-Time spent: **3** hours spent in total
+Time spent: **4.25** hours spent in total
 
 ## User Stories
 
