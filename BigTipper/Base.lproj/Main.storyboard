@@ -38,46 +38,32 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajD-m5-bQ1">
-                                <rect key="frame" x="16" y="141" width="25" height="21"/>
+                                <rect key="frame" x="16" y="199" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBG-SX-Alu">
-                                <rect key="frame" x="187" y="141" width="172" height="21"/>
+                                <rect key="frame" x="187" y="199" width="172" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywD-Yd-8nE">
-                                <rect key="frame" x="16" y="192" width="343" height="5"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="250" width="343" height="5"/>
+                                <color key="backgroundColor" red="0.0" green="0.4784313738" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="5" id="q4I-hG-NDI"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9l-1r-aCX">
-                                <rect key="frame" x="16" y="227" width="38" height="21"/>
+                                <rect key="frame" x="16" y="285" width="38" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xAI-jp-3iL">
-                                <rect key="frame" x="16" y="278" width="343" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="hXf-S4-o22"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="15%"/>
-                                    <segment title="20%"/>
-                                    <segment title="25%"/>
-                                </segments>
-                                <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="Mqy-48-rcp"/>
-                                </connections>
-                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPQ-bf-rQf">
-                                <rect key="frame" x="187" y="227" width="172" height="21"/>
+                                <rect key="frame" x="187" y="285" width="172" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -87,7 +73,6 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ywD-Yd-8nE" firstAttribute="top" secondItem="ajD-m5-bQ1" secondAttribute="bottom" constant="30" id="2ve-uq-jib"/>
-                            <constraint firstItem="xAI-jp-3iL" firstAttribute="top" secondItem="y9l-1r-aCX" secondAttribute="bottom" constant="30" id="60a-WV-evw"/>
                             <constraint firstAttribute="leadingMargin" secondItem="LC3-mD-J9s" secondAttribute="leading" id="7A1-RT-d4C"/>
                             <constraint firstItem="y9l-1r-aCX" firstAttribute="top" secondItem="ywD-Yd-8nE" secondAttribute="bottom" constant="30" id="EGz-da-jst"/>
                             <constraint firstItem="Php-EG-XxD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="FTY-ba-3Em"/>
@@ -98,14 +83,12 @@
                             <constraint firstItem="UPQ-bf-rQf" firstAttribute="top" secondItem="ywD-Yd-8nE" secondAttribute="bottom" constant="30" id="ZnG-BD-KQ8"/>
                             <constraint firstAttribute="leadingMargin" secondItem="y9l-1r-aCX" secondAttribute="leading" id="Zxu-nT-CFc"/>
                             <constraint firstItem="UPQ-bf-rQf" firstAttribute="leading" secondItem="y9l-1r-aCX" secondAttribute="trailing" constant="133" id="c42-hn-yJA"/>
-                            <constraint firstItem="RBG-SX-Alu" firstAttribute="top" secondItem="Php-EG-XxD" secondAttribute="bottom" constant="26" id="eQH-ui-g92"/>
+                            <constraint firstItem="RBG-SX-Alu" firstAttribute="top" secondItem="Php-EG-XxD" secondAttribute="bottom" constant="84" id="eQH-ui-g92"/>
                             <constraint firstItem="RBG-SX-Alu" firstAttribute="leading" secondItem="ajD-m5-bQ1" secondAttribute="trailing" constant="146" id="gZ1-Xi-qpX"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ajD-m5-bQ1" secondAttribute="leading" id="hm5-nB-EW6"/>
-                            <constraint firstItem="ajD-m5-bQ1" firstAttribute="top" secondItem="LC3-mD-J9s" secondAttribute="bottom" constant="30" id="i1t-xX-9zb"/>
+                            <constraint firstItem="ajD-m5-bQ1" firstAttribute="top" secondItem="LC3-mD-J9s" secondAttribute="bottom" constant="88" id="i1t-xX-9zb"/>
                             <constraint firstItem="LC3-mD-J9s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="mrN-mX-lnU"/>
                             <constraint firstItem="Php-EG-XxD" firstAttribute="leading" secondItem="LC3-mD-J9s" secondAttribute="trailing" constant="148" id="oiO-kY-7eC"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="xAI-jp-3iL" secondAttribute="leading" id="sex-Br-7Za"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xAI-jp-3iL" secondAttribute="trailing" id="vV1-Rm-hJR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Php-EG-XxD" secondAttribute="trailing" id="y9T-BO-rs8"/>
                         </constraints>
                         <connections>
@@ -122,7 +105,6 @@
                     <connections>
                         <outlet property="billTextField" destination="Php-EG-XxD" id="kxm-5s-op5"/>
                         <outlet property="tipLabel" destination="RBG-SX-Alu" id="QuK-zP-dZM"/>
-                        <outlet property="tipSegmentedControl" destination="xAI-jp-3iL" id="rNL-G6-Msw"/>
                         <outlet property="totalLabel" destination="UPQ-bf-rQf" id="HKg-g6-IHT"/>
                     </connections>
                 </viewController>

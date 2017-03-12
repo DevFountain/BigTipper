@@ -6,6 +6,8 @@
 //  Copyright © 2017 DevFountain LLC. All rights reserved.
 //
 
+import TinyConstraints
+import TwicketSegmentedControl
 import UIKit
 
 class TipViewController: UIViewController {
@@ -13,31 +15,35 @@ class TipViewController: UIViewController {
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
-    @IBOutlet weak var tipSegmentedControl: UISegmentedControl!
 
-    static var tipPercentPickerData = [TipPercent]()
+    var tipSegmentedControl = TwicketSegmentedControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let fifteen = TipPercent(title: "15%", value: 0.15)
-        TipViewController.tipPercentPickerData.append(fifteen)
-
-        let twenty = TipPercent(title: "20%", value: 0.20)
-        TipViewController.tipPercentPickerData.append(twenty)
-
-        let twentyFive = TipPercent(title: "25%", value: 0.25)
-        TipViewController.tipPercentPickerData.append(twentyFive)
+        Tip.getPercentages()
 
         if Settings.billAmount != "" {
             billTextField.text = Settings.billAmount
             calculateTip(self)
         }
+
+        tipSegmentedControl.delegate = self
+
+        tipSegmentedControl.backgroundColor = UIColor(red: 0, green: 122, blue: 255, alpha: 1)
+        tipSegmentedControl.frame = CGRect(x: 16, y: 141, width: view.frame.width - 32, height: 29)
+        tipSegmentedControl.setSegmentItems(Tip.titles)
+
+        view.addSubview(tipSegmentedControl)
+
+        tipSegmentedControl.top(to: billTextField, billTextField.bottomAnchor, offset: 26)
+        tipSegmentedControl.left(to: view)
+        tipSegmentedControl.right(to: view)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tipSegmentedControl.selectedSegmentIndex = Settings.defaultTipPercent
+        tipSegmentedControl.move(to: Settings.defaultTipPercent)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -58,9 +64,9 @@ class TipViewController: UIViewController {
         billTextField.resignFirstResponder()
     }
 
-    @IBAction func calculateTip(_ sender: AnyObject) {
+    @IBAction func calculateTip(_ sender: Any) {
         let bill = Double(billTextField.text!) ?? 0
-        let tip = bill * TipViewController.tipPercentPickerData[tipSegmentedControl.selectedSegmentIndex].value
+        let tip = bill * Tip.percentages[tipSegmentedControl.selectedSegmentIndex].value
         let total = bill + tip
 
         let currencyFormatter = NumberFormatter()
@@ -74,6 +80,14 @@ class TipViewController: UIViewController {
         totalLabel.text = currencyFormatter.string(from: NSNumber(value: total))
 
         Settings.billAmount = billTextField.text!
+    }
+
+}
+
+extension TipViewController: TwicketSegmentedControlDelegate {
+
+    func didSelect(_ segmentIndex: Int) {
+        calculateTip(self)
     }
 
 }

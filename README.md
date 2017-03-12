@@ -4,7 +4,7 @@
 
 Submitted by: **Curtis Wilcox**
 
-Time spent: **4.25** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
@@ -14,7 +14,7 @@ The following **required** functionality is complete:
 * [x] Settings page to change the default tip percentage.
 
 The following **optional** features are implemented:
-* [ ] UI animations
+* [x] UI animations
 * [x] Remembering the bill amount across app restarts (if <10mins)
 * [x] Using locale-specific currency and currency thousands separators.
 * [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
@@ -23,7 +23,8 @@ The following **additional** features are implemented:
 
 - [x] Forced billTextField to resign first responder allowing for smoother transition between Tip and Settings scenes.
 - [x] Added a clear button to billTextField to allow the user to quickly clear the field when entering a new amount.
-<!--- [ ] List anything else that you can get done to improve the app functionality!-->
+- [x] Added the TinyConstraints framework to assist with programmatically setting constraints of the tip segmented control.
+- [x] Added TwicketSegmentedControl framework to assist with animation of the tip segmented control.
 
 ## Video Walkthrough
 

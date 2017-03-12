@@ -15,8 +15,10 @@
 		E98A67D31E6A177A00C584D2 /* BigTipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67D21E6A177A00C584D2 /* BigTipperTests.swift */; };
 		E98A67DE1E6A177A00C584D2 /* BigTipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67DD1E6A177A00C584D2 /* BigTipperUITests.swift */; };
 		E98A67F01E6A332400C584D2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67EF1E6A332400C584D2 /* SettingsViewController.swift */; };
-		E98A67F21E6A358D00C584D2 /* TipPercent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67F11E6A358D00C584D2 /* TipPercent.swift */; };
+		E98A67F21E6A358D00C584D2 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67F11E6A358D00C584D2 /* Tip.swift */; };
 		E98A67F61E6A39D600C584D2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67F51E6A39D600C584D2 /* Settings.swift */; };
+		E99659341E74E9F70027E83E /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99659331E74E9F70027E83E /* TinyConstraints.framework */; };
+		E9D869361E74D34A00024EBD /* TwicketSegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D869351E74D34A00024EBD /* TwicketSegmentedControl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +55,10 @@
 		E98A67DD1E6A177A00C584D2 /* BigTipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTipperUITests.swift; sourceTree = "<group>"; };
 		E98A67DF1E6A177A00C584D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E98A67EF1E6A332400C584D2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		E98A67F11E6A358D00C584D2 /* TipPercent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipPercent.swift; sourceTree = "<group>"; };
+		E98A67F11E6A358D00C584D2 /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		E98A67F51E6A39D600C584D2 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		E99659331E74E9F70027E83E /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
+		E9D869351E74D34A00024EBD /* TwicketSegmentedControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwicketSegmentedControl.framework; path = Carthage/Build/iOS/TwicketSegmentedControl.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99659341E74E9F70027E83E /* TinyConstraints.framework in Frameworks */,
+				E9D869361E74D34A00024EBD /* TwicketSegmentedControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +97,7 @@
 				E98A67D11E6A177A00C584D2 /* BigTipperTests */,
 				E98A67DC1E6A177A00C584D2 /* BigTipperUITests */,
 				E98A67BB1E6A177A00C584D2 /* Products */,
+				E9D869341E74D34A00024EBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,7 +117,7 @@
 				E98A67BD1E6A177A00C584D2 /* AppDelegate.swift */,
 				E98A67BF1E6A177A00C584D2 /* TipViewController.swift */,
 				E98A67EF1E6A332400C584D2 /* SettingsViewController.swift */,
-				E98A67F11E6A358D00C584D2 /* TipPercent.swift */,
+				E98A67F11E6A358D00C584D2 /* Tip.swift */,
 				E98A67F51E6A39D600C584D2 /* Settings.swift */,
 				E98A67C11E6A177A00C584D2 /* Main.storyboard */,
 				E98A67C41E6A177A00C584D2 /* Assets.xcassets */,
@@ -138,6 +145,15 @@
 			path = BigTipperUITests;
 			sourceTree = "<group>";
 		};
+		E9D869341E74D34A00024EBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E99659331E74E9F70027E83E /* TinyConstraints.framework */,
+				E9D869351E74D34A00024EBD /* TwicketSegmentedControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +164,7 @@
 				E98A67B61E6A177900C584D2 /* Sources */,
 				E98A67B71E6A177900C584D2 /* Frameworks */,
 				E98A67B81E6A177900C584D2 /* Resources */,
+				E9D869381E74D37900024EBD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -270,6 +287,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E9D869381E74D37900024EBD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/TwicketSegmentedControl.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TinyConstraints.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E98A67B61E6A177900C584D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -277,7 +312,7 @@
 			files = (
 				E98A67C01E6A177A00C584D2 /* TipViewController.swift in Sources */,
 				E98A67F61E6A39D600C584D2 /* Settings.swift in Sources */,
-				E98A67F21E6A358D00C584D2 /* TipPercent.swift in Sources */,
+				E98A67F21E6A358D00C584D2 /* Tip.swift in Sources */,
 				E98A67BE1E6A177A00C584D2 /* AppDelegate.swift in Sources */,
 				E98A67F01E6A332400C584D2 /* SettingsViewController.swift in Sources */,
 			);
@@ -430,6 +465,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X9M5Y5BW7N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BigTipper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devfountain.BigTipper;
@@ -443,6 +482,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X9M5Y5BW7N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BigTipper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devfountain.BigTipper;
