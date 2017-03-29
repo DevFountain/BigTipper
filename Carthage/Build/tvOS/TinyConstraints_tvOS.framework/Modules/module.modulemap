@@ -1,3 +1,0 @@
-framework module TinyConstraints_tvOS {
-    header "TinyConstraints_tvOS-Swift.h"
-}
