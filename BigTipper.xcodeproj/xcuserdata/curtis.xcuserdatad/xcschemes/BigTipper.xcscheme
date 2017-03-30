@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E98A67CD1E6A177A00C584D2"
-               BuildableName = "BigTipperTests.xctest"
-               BlueprintName = "BigTipperTests"
-               ReferencedContainer = "container:BigTipper.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E98A67D81E6A177A00C584D2"
-               BuildableName = "BigTipperUITests.xctest"
-               BlueprintName = "BigTipperUITests"
-               ReferencedContainer = "container:BigTipper.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

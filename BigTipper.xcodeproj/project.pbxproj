@@ -12,31 +12,12 @@
 		E98A67C31E6A177A00C584D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98A67C11E6A177A00C584D2 /* Main.storyboard */; };
 		E98A67C51E6A177A00C584D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98A67C41E6A177A00C584D2 /* Assets.xcassets */; };
 		E98A67C81E6A177A00C584D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98A67C61E6A177A00C584D2 /* LaunchScreen.storyboard */; };
-		E98A67D31E6A177A00C584D2 /* BigTipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67D21E6A177A00C584D2 /* BigTipperTests.swift */; };
-		E98A67DE1E6A177A00C584D2 /* BigTipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67DD1E6A177A00C584D2 /* BigTipperUITests.swift */; };
 		E98A67F01E6A332400C584D2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67EF1E6A332400C584D2 /* SettingsViewController.swift */; };
 		E98A67F21E6A358D00C584D2 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67F11E6A358D00C584D2 /* Tip.swift */; };
 		E98A67F61E6A39D600C584D2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A67F51E6A39D600C584D2 /* Settings.swift */; };
 		E99659341E74E9F70027E83E /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99659331E74E9F70027E83E /* TinyConstraints.framework */; };
 		E9D869361E74D34A00024EBD /* TwicketSegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D869351E74D34A00024EBD /* TwicketSegmentedControl.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E98A67CF1E6A177A00C584D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E98A67B21E6A177900C584D2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E98A67B91E6A177900C584D2;
-			remoteInfo = BigTipper;
-		};
-		E98A67DA1E6A177A00C584D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E98A67B21E6A177900C584D2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E98A67B91E6A177900C584D2;
-			remoteInfo = BigTipper;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E937674E1E8C811D000B6D98 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
@@ -49,12 +30,6 @@
 		E98A67C41E6A177A00C584D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E98A67C71E6A177A00C584D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E98A67C91E6A177A00C584D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E98A67CE1E6A177A00C584D2 /* BigTipperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigTipperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E98A67D21E6A177A00C584D2 /* BigTipperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTipperTests.swift; sourceTree = "<group>"; };
-		E98A67D41E6A177A00C584D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E98A67D91E6A177A00C584D2 /* BigTipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigTipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E98A67DD1E6A177A00C584D2 /* BigTipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTipperUITests.swift; sourceTree = "<group>"; };
-		E98A67DF1E6A177A00C584D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E98A67EF1E6A332400C584D2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E98A67F11E6A358D00C584D2 /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		E98A67F51E6A39D600C584D2 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -72,20 +47,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E98A67CB1E6A177A00C584D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E98A67D61E6A177A00C584D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,8 +57,6 @@
 				E94C51931E6A509A0017D3E7 /* README.md */,
 				E94C51951E6A51220017D3E7 /* BigTipper.gif */,
 				E98A67BC1E6A177A00C584D2 /* BigTipper */,
-				E98A67D11E6A177A00C584D2 /* BigTipperTests */,
-				E98A67DC1E6A177A00C584D2 /* BigTipperUITests */,
 				E98A67BB1E6A177A00C584D2 /* Products */,
 				E9D869341E74D34A00024EBD /* Frameworks */,
 			);
@@ -107,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				E98A67BA1E6A177A00C584D2 /* BigTipper.app */,
-				E98A67CE1E6A177A00C584D2 /* BigTipperTests.xctest */,
-				E98A67D91E6A177A00C584D2 /* BigTipperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,24 +84,6 @@
 				E98A67C91E6A177A00C584D2 /* Info.plist */,
 			);
 			path = BigTipper;
-			sourceTree = "<group>";
-		};
-		E98A67D11E6A177A00C584D2 /* BigTipperTests */ = {
-			isa = PBXGroup;
-			children = (
-				E98A67D21E6A177A00C584D2 /* BigTipperTests.swift */,
-				E98A67D41E6A177A00C584D2 /* Info.plist */,
-			);
-			path = BigTipperTests;
-			sourceTree = "<group>";
-		};
-		E98A67DC1E6A177A00C584D2 /* BigTipperUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E98A67DD1E6A177A00C584D2 /* BigTipperUITests.swift */,
-				E98A67DF1E6A177A00C584D2 /* Info.plist */,
-			);
-			path = BigTipperUITests;
 			sourceTree = "<group>";
 		};
 		E9D869341E74D34A00024EBD /* Frameworks */ = {
@@ -177,42 +116,6 @@
 			productReference = E98A67BA1E6A177A00C584D2 /* BigTipper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E98A67CD1E6A177A00C584D2 /* BigTipperTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E98A67E51E6A177A00C584D2 /* Build configuration list for PBXNativeTarget "BigTipperTests" */;
-			buildPhases = (
-				E98A67CA1E6A177A00C584D2 /* Sources */,
-				E98A67CB1E6A177A00C584D2 /* Frameworks */,
-				E98A67CC1E6A177A00C584D2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E98A67D01E6A177A00C584D2 /* PBXTargetDependency */,
-			);
-			name = BigTipperTests;
-			productName = BigTipperTests;
-			productReference = E98A67CE1E6A177A00C584D2 /* BigTipperTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E98A67D81E6A177A00C584D2 /* BigTipperUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E98A67E81E6A177A00C584D2 /* Build configuration list for PBXNativeTarget "BigTipperUITests" */;
-			buildPhases = (
-				E98A67D51E6A177A00C584D2 /* Sources */,
-				E98A67D61E6A177A00C584D2 /* Frameworks */,
-				E98A67D71E6A177A00C584D2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E98A67DB1E6A177A00C584D2 /* PBXTargetDependency */,
-			);
-			name = BigTipperUITests;
-			productName = BigTipperUITests;
-			productReference = E98A67D91E6A177A00C584D2 /* BigTipperUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -225,20 +128,7 @@
 				TargetAttributes = {
 					E98A67B91E6A177900C584D2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = X9M5Y5BW7N;
 						ProvisioningStyle = Automatic;
-					};
-					E98A67CD1E6A177A00C584D2 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = X9M5Y5BW7N;
-						ProvisioningStyle = Automatic;
-						TestTargetID = E98A67B91E6A177900C584D2;
-					};
-					E98A67D81E6A177A00C584D2 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = X9M5Y5BW7N;
-						ProvisioningStyle = Automatic;
-						TestTargetID = E98A67B91E6A177900C584D2;
 					};
 				};
 			};
@@ -256,8 +146,6 @@
 			projectRoot = "";
 			targets = (
 				E98A67B91E6A177900C584D2 /* BigTipper */,
-				E98A67CD1E6A177A00C584D2 /* BigTipperTests */,
-				E98A67D81E6A177A00C584D2 /* BigTipperUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -270,20 +158,6 @@
 				E98A67C81E6A177A00C584D2 /* LaunchScreen.storyboard in Resources */,
 				E98A67C51E6A177A00C584D2 /* Assets.xcassets in Resources */,
 				E98A67C31E6A177A00C584D2 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E98A67CC1E6A177A00C584D2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E98A67D71E6A177A00C584D2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,36 +194,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E98A67CA1E6A177A00C584D2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E98A67D31E6A177A00C584D2 /* BigTipperTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E98A67D51E6A177A00C584D2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E98A67DE1E6A177A00C584D2 /* BigTipperUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E98A67D01E6A177A00C584D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E98A67B91E6A177900C584D2 /* BigTipper */;
-			targetProxy = E98A67CF1E6A177A00C584D2 /* PBXContainerItemProxy */;
-		};
-		E98A67DB1E6A177A00C584D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E98A67B91E6A177900C584D2 /* BigTipper */;
-			targetProxy = E98A67DA1E6A177A00C584D2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E98A67C11E6A177A00C584D2 /* Main.storyboard */ = {
@@ -466,7 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X9M5Y5BW7N;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -483,7 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X9M5Y5BW7N;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -493,64 +338,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.devfountain.BigTipper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		E98A67E61E6A177A00C584D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = X9M5Y5BW7N;
-				INFOPLIST_FILE = BigTipperTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devfountain.BigTipperTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigTipper.app/BigTipper";
-			};
-			name = Debug;
-		};
-		E98A67E71E6A177A00C584D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = X9M5Y5BW7N;
-				INFOPLIST_FILE = BigTipperTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devfountain.BigTipperTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigTipper.app/BigTipper";
-			};
-			name = Release;
-		};
-		E98A67E91E6A177A00C584D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = X9M5Y5BW7N;
-				INFOPLIST_FILE = BigTipperUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devfountain.BigTipperUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = BigTipper;
-			};
-			name = Debug;
-		};
-		E98A67EA1E6A177A00C584D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = X9M5Y5BW7N;
-				INFOPLIST_FILE = BigTipperUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devfountain.BigTipperUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = BigTipper;
 			};
 			name = Release;
 		};
@@ -571,24 +358,6 @@
 			buildConfigurations = (
 				E98A67E31E6A177A00C584D2 /* Debug */,
 				E98A67E41E6A177A00C584D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E98A67E51E6A177A00C584D2 /* Build configuration list for PBXNativeTarget "BigTipperTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E98A67E61E6A177A00C584D2 /* Debug */,
-				E98A67E71E6A177A00C584D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E98A67E81E6A177A00C584D2 /* Build configuration list for PBXNativeTarget "BigTipperUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E98A67E91E6A177A00C584D2 /* Debug */,
-				E98A67EA1E6A177A00C584D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
